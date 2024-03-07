@@ -86,9 +86,6 @@ a{
  visibility:hidden;
 }
 </style>
-</head>
-
-<body>
     
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -161,8 +158,6 @@ subtext.forEach(function(element) {
   });
 </script>
 
-
-</html>
 
 
 
