@@ -1,10 +1,6 @@
-<html>
-    <head>
-        
+
 <style>
-    body{
-        background-color:blue;
-    }
+    
     .pull-left.ui-navbar-toggle.navbar-toggle.auto-icon-side-menu-open {
       display: none;
     }
@@ -164,7 +160,7 @@ subtext.forEach(function(element) {
 });
   });
 </script>
-</body>
+
 
 </html>
 
