@@ -1,4 +1,60 @@
 <script>
+  var image = document.querySelector(".spinnerSplash");
+  if (image) {
+    image.src = "https://i.stack.imgur.com/hzk6C.gif"; 
+  }
+
+  var subscribeElements = document.getElementsByClassName("subscription-h3");
+  for (var i = 0; i < subscribeElements.length; i++) {
+    subscribeElements[i].innerHTML = "GET OFFER";
+  }
+
+  var allElements = document.querySelectorAll('*');
+  allElements.forEach(function(element) {
+    if (element.textContent.trim() === "ඔබගේ ජංගම දුරකථන අංකය ඇතුලත් කරන්න.") {
+      element.textContent = " ";
+    }
+    // Other if statements here...
+  });
+
+  var textCenterElements = document.querySelectorAll('.text-center');
+  textCenterElements.forEach(function(textCenterElement) {
+    var secondDiv = textCenterElement.querySelector(':nth-child(2)');
+    if (secondDiv) {
+      secondDiv.style.display = "none";
+    }
+  });
+
+  var sl = document.querySelectorAll('.text-center');
+  sl.forEach(function(textCenterElement) {
+    var textNode = document.createTextNode("GET FREE DATA");
+    
+    var span = document.createElement("span");
+    span.className = "highlighted-text"; 
+    span.appendChild(textNode);
+
+    textCenterElement.appendChild(span);
+  });
+
+  var style = document.createElement("style");
+  style.innerHTML = ".highlighted-text { color: white; font-weight: bold; text-align: center;background-color:none; }"; 
+  document.head.appendChild(style); 
+
+  var subtext = document.querySelectorAll('.sub-button-sub');
+  subtext.forEach(function(element) {
+    element.textContent = "GET OFFER";
+  });
+</script>
+
+
+
+
+
+
+
+
+
+/*<script>
   document.addEventListener("DOMContentLoaded", function() {
    
     var image = document.querySelector(".spinnerSplash");
